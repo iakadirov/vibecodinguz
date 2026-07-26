@@ -62,7 +62,9 @@ o'zgartirma, faqat 5-qadamga (commit) o't.
    `- 2026-07-26: S1 boshlandi — seed va bosh sahifa qoralamasi (lib/seed.ts, app/page.tsx)`
 
 3. **Handoff bo'limini yangila.** Bu bo'lim **almashtiriladi** (eskisi keraksiz):
-   keyingi sessiya nimadan boshlashi. **Eng ko'pi 3 qator, raqamlangan ro'yxatsiz.**
+   keyingi sessiya nimadan boshlashi. **Eng ko'pi 3 qator — har qator bitta gap.**
+   Raqamlangan ro'yxat, ichki izoh, kod namunasi qo'shma. Uzun rejani faylga emas,
+   asosiy sessiyaga og'zaki ayt.
    Namuna:
    ```
    Keyingi: Next.js skeleti (package.json, tsconfig, Tailwind) — hozir npm run dev ishlamaydi.

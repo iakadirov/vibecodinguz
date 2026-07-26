@@ -47,6 +47,9 @@ Har savolda:
 - "o'zim yozaman" — `AskUserQuestion` uni avtomatik qo'shadi (Other). Tool bo'lmasa,
   raqamlangan ro'yxat ber va oxiriga "yoki o'zingiz yozing" deb qo'y.
 
+`AskUserQuestion`da bitta savolga eng ko'pi **4 variant** sig'adi. Ya'ni: 3 tayyor
+variant + "bilmayman". Ko'proq variant yozma — tool xato beradi.
+
 Variantlar **umumiy shablon emas, shu g'oyaga moslangan** bo'lsin. Masalan mashina ijarasi
 g'oyasida "Narx qanday hisoblanadi?" savolining variantlari: "kunlik tarif", "soatlik tarif",
 "kunlik + kilometr limiti" — "variant A / variant B" emas.
