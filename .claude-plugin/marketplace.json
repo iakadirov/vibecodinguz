@@ -10,8 +10,8 @@
     {
       "name": "vibecoding",
       "source": "./",
-      "description": "G'oyadan hujjatlargacha: charxla -> qovurdoq -> prdla zanjiri va hisobotchi agent. Butun muloqot lotin o'zbek tilida.",
-      "version": "1.0.3",
+      "description": "G'oyadan hujjatlargacha: charxla -> qovurdoq -> prdla -> savala zanjiri va hisobotchi agent. Butun muloqot lotin o'zbek tilida.",
+      "version": "1.1.0",
       "category": "productivity",
       "tags": [
         "uzbek",

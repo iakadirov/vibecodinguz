@@ -4,9 +4,9 @@ G'oyadan hujjatlargacha bo'lgan yo'lni avtomatlashtiradigan plugin.
 **Vibe Coding Express** kursi uchun. Butun muloqot lotin o'zbek tilida.
 
 ```
-charxla  ->  qovurdoq  ->  prdla        + hisobotchi
-g'oyani      savolga        hujjatlar      har commitda
-charxlash    tutish         paketi         hisobot yozadi
+charxla  ->  qovurdoq  ->  prdla    ->  savala      + hisobotchi
+g'oyani      savolga        hujjatlar    7 ekspert     har commitda
+charxlash    tutish         paketi       Go/No-Go      hisobot yozadi
 ```
 
 ---
@@ -92,7 +92,43 @@ Sprint tasklari **sizning loyihangizga konkret** yoziladi — umumiy shablon ema
 /prdla
 ```
 
-### 4. `hisobotchi` — hisobot agenti
+### 4. `savala` — ekspertlar paneli va Go/No-Go
+
+PRD'ni 7 nafar ekspert og'ir savollarga tutadi va loyihani sindirishga harakat qiladi.
+
+| Ekspert | Nimani bosadi |
+|---|---|
+| 🔍 Bozor tahlilchisi | Bozor bormi, kim urinib ko'rgan va nega o'lgan |
+| 💰 VC tanqidchi | Bitta bitim iqtisodiyoti, nega bu biznes |
+| 😈 Advokat dyavola | Har javobga qarshi argument |
+| 📣 O'sish marketologi | Birinchi 100 foydalanuvchi qayerdan |
+| ⚙️ Operatsion direktor | 10 barobar o'ssa nima birinchi bo'lib sinadi |
+| ⚖️ Yurist-riskchi | Kim javobgar, shartnoma, maxfiylik |
+| 🎭 Mehmon ekspert | Domenga qarab almashadi (firibgarlik, UX, CTO, regulyator...) |
+
+- 2 raund, 6-8 og'ir savol. Javob bo'lmasa — jarima yo'q, ochiq xavf sifatida yoziladi
+- Yaxshi javob e'tirozni yopadi va `DECISIONS.md`ga qaror bo'lib tushadi
+- Oxirida **yumaloq stol** vizualizatsiyasi: kim nima dedi, kim qanday ovoz berdi
+- Qaror arifmetika bilan: **GO** · **SHARTLI GO** (shartlar bilan) · **NO-GO** (2 ta pivot taklifi bilan)
+- Natija `SAVALA.md`ga yoziladi
+
+```
+/savala
+```
+
+```
+─────────── OVOZ BERISH ───────────
+
+ 🔍 Bozor tahlilchisi   ⚠️  SHARTLI
+ 💰 VC tanqidchi        ❌  NO-GO
+ 😈 Advokat dyavola     ✅  GO
+ ...
+  ▰▰▰▰▰▱▱  GO 3 · SHARTLI 2 · NO-GO 2
+
+  QAROR:  SHARTLI GO
+```
+
+### 5. `hisobotchi` — hisobot agenti
 
 Har commitdan oldin avtomatik ishga tushadi va:
 
@@ -111,14 +147,15 @@ o'zi uyg'onadi.
 
 ## Zanjir
 
-Uchala skill bitta sessiyada ketma-ket ishlashga mo'ljallangan:
+Skill'lar ketma-ket ishlashga mo'ljallangan:
 
 ```
-charxla -> qovurdoq -> prdla
+charxla -> qovurdoq -> prdla -> savala
 ```
 
 Lekin har biri mustaqil ham chaqiriladi. Kontekstda oldingi bosqich natijasi bo'lmasa,
-skill sizni to'g'ri joyga yo'naltiradi (masalan `prdla` avval `qovurdoq`ni so'raydi).
+skill sizni to'g'ri joyga yo'naltiradi (`prdla` avval `qovurdoq`ni so'raydi, `savala`
+esa `PRD.md` yo'q bo'lsa `prdla`ga yuboradi).
 
 ---
 

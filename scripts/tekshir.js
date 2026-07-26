@@ -112,7 +112,7 @@ function frontmatter(fayl) {
 }
 
 function komponentTekshir() {
-  const kutilgan = ['charxla', 'qovurdoq', 'prdla'];
+  const kutilgan = ['charxla', 'qovurdoq', 'prdla', 'savala'];
   for (const nom of kutilgan) {
     const fayl = path.join(ROOT, 'skills', nom, 'SKILL.md');
     if (!fs.existsSync(fayl)) {
@@ -178,6 +178,21 @@ function komponentTekshir() {
     const yoq = bloklar.filter((b) => !matn.includes(b));
     if (yoq.length) xatolar.push(`qovurdoq/SKILL.md: bloklar yetishmayapti: ${yoq.join(', ')}`);
     else console.log('OK  qovurdoq — 5 blok savollar bankasi ichida');
+  }
+
+  const savala = path.join(ROOT, 'skills', 'savala', 'SKILL.md');
+  if (fs.existsSync(savala)) {
+    const matn = fs.readFileSync(savala, 'utf8');
+    const ekspertlar = ['Bozor tahlilchisi', 'VC tanqidchi', 'Advokat dyavola',
+      "O'sish marketologi", 'Operatsion direktor', 'Yurist-riskchi', 'Mehmon ekspert'];
+    const yoq = ekspertlar.filter((e) => !matn.includes(e));
+    if (yoq.length) xatolar.push(`savala/SKILL.md: ekspertlar yetishmayapti: ${yoq.join(', ')}`);
+    else console.log('OK  savala — 7 ekspert paneli');
+
+    const qism = ['YUMALOQ STOL', 'OVOZ BERISH', 'SHARTLI GO', 'NO-GO'];
+    const yoqQism = qism.filter((q) => !matn.includes(q));
+    if (yoqQism.length) xatolar.push(`savala/SKILL.md: vizualizatsiya qismlari yo'q: ${yoqQism.join(', ')}`);
+    else console.log('OK  savala — yumaloq stol va Go/No-Go vizualizatsiyasi');
   }
 }
 
