@@ -158,31 +158,14 @@ Shkala: 7 katak. `▰` = GO va SHARTLI ovozlar yig'indisi, `▱` = NO-GO.
 **NO-GO chiqsa** — bu ham natija, muvaffaqiyatsizlik emas. Panel majburan
 **2 ta pivot yo'nalishi** taklif qiladi: g'oyaning qaysi qismi tirik qolishi mumkin.
 
-## Qadam 6 — tavsiyalar va motivatsiya
+## Qadam 6 — natijani saqla (MAJBURIY, tavsiyalardan OLDIN)
 
-Qarordan keyin **3-5 ta konkret keyingi qadam**. Har biri sprintga bog'lansin:
+Yumaloq stolni chiqarganingdan keyin **darhol** `SAVALA.md` faylini yoz. Bu ixtiyoriy
+emas: chatdagi vizualizatsiya sessiya bilan birga yo'qoladi, fayl esa qoladi.
+Faylni yozmasdan yakuniy so'zga o'tma.
 
-```
-Keyingi qadamlar:
-1. [qadam] — S3'da, chunki [sabab]
-2. [qadam] — hujjat emas, jonli tekshiruv: [nima qilinadi]
-3. ...
-```
-
-Oxirida **motivatsiya — 3-4 qator, samimiy va aniq**. Maqtov emas: panel nimani
-haqiqatan kuchli deb topganini ayting va nima uchun davom etishga arziydi.
-Bo'sh "omad tilaymiz" yo'q.
-
-Namuna ohang:
-> Panel qattiq bosdi, lekin bitta narsa aniq: siz muammoni tanish odamlar
-> og'ridan bilasiz, va bu sotib olib bo'lmaydigan afzallik. Bugungi eng qimmat
-> savol — "kim birinchi ishonadi?" — kod bilan emas, 5 ta qo'ng'iroq bilan
-> hal qilinadi. Shuni qiling, keyin S1'ga qayting.
-
-## Qadam 7 — natijani saqla
-
-Loyiha ildizida `SAVALA.md` faylini yoz (bor bo'lsa — **ustidan yozma**, oxiriga
-yangi sanali bo'lim qo'sh):
+Loyiha ildizida `SAVALA.md` (bor bo'lsa — **ustidan yozma**, oxiriga yangi sanali
+bo'lim qo'sh):
 
 ```markdown
 # SAVALA — [Loyiha nomi]
@@ -208,17 +191,40 @@ yangi sanali bo'lim qo'sh):
 1. ...
 ```
 
+Fayl oxiriga imzo:
+
+```
+*[Loyiha nomi] · vibecoding plugin bilan yaratilgan · vibecoding.uz*
+```
+
 `DECISIONS.md` mavjud bo'lsa — savala paytida qabul qilingan haqiqiy qarorlarni
 `sana · qaror · sabab` formatida oxiriga qo'sh. Qaror bo'lmasa faylga tegma.
 
 Ochiq xavflarni `PRD.md`dagi "Ochiq savollar" bo'limiga ham qo'shishni **taklif qil**,
 lekin so'ramasdan yozma.
 
-Fayl oxiriga imzo:
+## Qadam 7 — tavsiyalar va motivatsiya (chat oxiri)
+
+Fayl yozilgandan keyin **3-5 ta konkret keyingi qadam**. Har biri sprintga bog'lansin:
 
 ```
-*[Loyiha nomi] · vibecoding plugin bilan yaratilgan · vibecoding.uz*
+Keyingi qadamlar:
+1. [qadam] — S3'da, chunki [sabab]
+2. [qadam] — hujjat emas, jonli tekshiruv: [nima qilinadi]
+3. ...
 ```
+
+Oxirida **motivatsiya — 3-4 qator, samimiy va aniq**. Maqtov emas: panel nimani
+haqiqatan kuchli deb topganini ayting va nima uchun davom etishga arziydi.
+Bo'sh "omad tilaymiz" yo'q.
+
+Namuna ohang:
+> Panel qattiq bosdi, lekin bitta narsa aniq: siz muammoni tanish odamlar
+> og'ridan bilasiz, va bu sotib olib bo'lmaydigan afzallik. Bugungi eng qimmat
+> savol — "kim birinchi ishonadi?" — kod bilan emas, 5 ta qo'ng'iroq bilan
+> hal qilinadi. Shuni qiling, keyin S1'ga qayting.
+
+Oxirida bir qator bilan ayt: natija `SAVALA.md`ga saqlandi.
 
 ## Chegaralar
 
