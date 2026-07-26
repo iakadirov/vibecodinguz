@@ -151,11 +151,33 @@ function komponentTekshir() {
   const skript = path.join(ROOT, 'hooks', 'hisobot-qorovul.js');
   if (!fs.existsSync(skript)) xatolar.push('hooks/hisobot-qorovul.js topilmadi');
 
-  const shablonlar = ['STACK.md', 'ROADMAP.md', 'SPRINT-SHABLON.md', 'SPRINT-format.md', 'sprintlar.md'];
-  for (const sh of shablonlar) {
-    if (!fs.existsSync(path.join(ROOT, 'skills', 'prdla', 'shablonlar', sh))) {
-      xatolar.push(`shablon topilmadi: skills/prdla/shablonlar/${sh}`);
-    }
+  // Skill'lar o'zini o'zi ta'minlashi kerak: shablonlar SKILL.md ichida bo'lsin,
+  // chunki plugin papkasi loyihadan tashqarida va o'qish uchun ruxsat kerak bo'lib qoladi.
+  const prdla = path.join(ROOT, 'skills', 'prdla', 'SKILL.md');
+  if (fs.existsSync(prdla)) {
+    const matn = fs.readFileSync(prdla, 'utf8');
+    const stack = [
+      'Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind',
+      'Caddy', 'GitHub Actions', 'Hetzner', 'Telegram Mini App', 'API-first',
+    ];
+    const yoq = stack.filter((s) => !matn.includes(s));
+    if (yoq.length) xatolar.push(`prdla/SKILL.md ichida reference stack to'liq emas: ${yoq.join(', ')}`);
+    else console.log('OK  reference stack — prdla/SKILL.md ichida to\'liq');
+
+    const sprintlar = ['SPRINT-1-kesim', 'SPRINT-2-xotira', 'SPRINT-3-auth',
+      'SPRINT-4-chuqurlik', 'SPRINT-5-telegram', 'SPRINT-6-admin', 'SPRINT-SHABLON'];
+    const yoqSprint = sprintlar.filter((s) => !matn.includes(s));
+    if (yoqSprint.length) xatolar.push(`prdla/SKILL.md: sprint fayllari yetishmayapti: ${yoqSprint.join(', ')}`);
+    else console.log('OK  sprintlar — 7 fayl ta\'riflangan');
+  }
+
+  const qovurdoq = path.join(ROOT, 'skills', 'qovurdoq', 'SKILL.md');
+  if (fs.existsSync(qovurdoq)) {
+    const matn = fs.readFileSync(qovurdoq, 'utf8');
+    const bloklar = ['Blok 1/5', 'Blok 2/5', 'Blok 3/5', 'Blok 4/5', 'Blok 5/5'];
+    const yoq = bloklar.filter((b) => !matn.includes(b));
+    if (yoq.length) xatolar.push(`qovurdoq/SKILL.md: bloklar yetishmayapti: ${yoq.join(', ')}`);
+    else console.log('OK  qovurdoq — 5 blok savollar bankasi ichida');
   }
 }
 
