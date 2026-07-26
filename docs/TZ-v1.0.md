@@ -5,6 +5,33 @@
 
 ---
 
+> ### ⚠️ ARXIV HUJJAT — joriy holat emas
+>
+> Bu **boshlang'ich** texnik topshiriq (v1.0, 2026-26-iyul). Plugin qurilish va
+> test jarayonida undan bir necha joyda ajradi. Joriy holat: [README](../README.md)
+> va [CHANGELOG](../CHANGELOG.md).
+>
+> **Asosiy farqlar:**
+>
+> 1. **`.claude-plugin/marketplace.json` qo'shildi** — TZ'dagi repo strukturasida yo'q
+>    edi, usiz `/plugin marketplace add` umuman ishlamaydi.
+> 2. **Shablonlar alohida fayl emas, `SKILL.md` ichida.** Sabab: plugin papkasi
+>    loyihadan tashqarida bo'lgani uchun skill o'z yordamchi faylini o'qiy olmaydi va
+>    mazmunini to'qib chiqaradi (v1.0.1 da tuzatilgan, CHANGELOG'ga qarang).
+> 3. **`qovurdoq` xulosani `.vibecoding/qovurdoq.md`ga saqlaydi** — TZ "fayl yozmaydi"
+>    degan edi, lekin sessiya uzilsa 25-30 savollik ish yo'qolar edi.
+> 4. **Hisobotchi hook orqali ishga tushadi** — TZ tanlovni quruvchiga qoldirgan edi.
+>    `PreToolUse` hook `git commit`ni ushlaydi, `.vibecoding/hisobot-ok` belgisi
+>    ruxsat beradi, `sprints/` yo'q bo'lsa hook uxlaydi.
+> 5. **S1..S6 sprint savollari** ("Ishlaydimi? / Eslab qoladimi? / Kim kirdi? /
+>    Haqiqiy hayotda chidaydimi? / Qo'lda turadimi? / Boshqarib bo'ladimi?") —
+>    TZ'da faqat S1 berilgan edi.
+> 6. **`savala` skilli qo'shildi (v1.1.0)** — TZ'dagi 7-bo'limda "kelajak" deb
+>    qoldirilgan `tanqidla` o'rniga, kengaytirilgan holda: 7 ekspert paneli va
+>    Go/No-Go qarori.
+
+---
+
 ## 1. UMUMIY TALABLAR
 
 **Nomi:** `vibecoding` (marketplace nomi: `vibecoding-uz`)

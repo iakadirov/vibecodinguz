@@ -184,6 +184,11 @@ esa `PRD.md` yo'q bo'lsa `prdla`ga yuboradi).
 
 ---
 
+## Hujjatlar
+
+- [CHANGELOG.md](CHANGELOG.md) — qaysi versiyada nima o'zgardi
+- [docs/TZ-v1.0.md](docs/TZ-v1.0.md) — boshlang'ich texnik topshiriq (arxiv)
+
 ## Litsenziya
 
 MIT — [LICENSE](LICENSE)
