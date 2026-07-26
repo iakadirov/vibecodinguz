@@ -26,14 +26,19 @@ Claude Code ichida quyidagi ikki buyruqni yozing:
 Tekshirish: `/plugin` deb yozing — ro'yxatda `vibecoding` ko'rinadi.
 Yoki `/` bosing — `charxla`, `qovurdoq`, `prdla` ro'yxatda chiqadi.
 
-**Yangilash** (ikkalasi ham kerak — avval katalog, keyin plugin):
+**Yangilash.** Odatda hech narsa qilish shart emas: Claude Code katalogni sessiya
+boshlanganda fon rejimida yangilaydi va yangi versiyani o'zi tortib oladi.
+
+Darhol kerak bo'lsa qo'lda majburlang:
 
 ```
 /plugin marketplace update vibecoding-uz
 /plugin update vibecoding@vibecoding-uz
+/reload-plugins
 ```
 
-Keyin Claude Code'ni qayta ishga tushiring.
+Yangilanish loyiha fayllaringizga (PRD, sprints, kod) **tegmaydi** — faqat plugin
+skill'lari almashadi.
 
 ---
 
