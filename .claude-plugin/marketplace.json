@@ -1,0 +1,28 @@
+{
+  "name": "vibecoding-uz",
+  "description": "Vibe Coding Express kursi uchun rasmiy plaginlar katalogi.",
+  "owner": {
+    "name": "vibecoding.uz",
+    "email": "iakadirov@gmail.com",
+    "url": "https://github.com/iakadirov"
+  },
+  "plugins": [
+    {
+      "name": "vibecoding",
+      "source": "./",
+      "description": "G'oyadan hujjatlargacha: charxla -> qovurdoq -> prdla zanjiri va hisobotchi agent. Butun muloqot lotin o'zbek tilida.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": [
+        "uzbek",
+        "prd",
+        "planning",
+        "startup"
+      ],
+      "author": {
+        "name": "vibecoding.uz",
+        "email": "iakadirov@gmail.com"
+      }
+    }
+  ]
+}

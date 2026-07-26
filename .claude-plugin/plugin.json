@@ -1,0 +1,23 @@
+{
+  "name": "vibecoding",
+  "displayName": "Vibecoding",
+  "version": "1.0.0",
+  "description": "G'oyadan hujjatlargacha: charxla -> qovurdoq -> prdla zanjiri va hisobotchi agent. Vibe Coding Express kursi uchun. Butun muloqot lotin o'zbek tilida.",
+  "author": {
+    "name": "vibecoding.uz",
+    "email": "iakadirov@gmail.com",
+    "url": "https://github.com/iakadirov"
+  },
+  "homepage": "https://github.com/iakadirov/vibecodinguz",
+  "repository": "https://github.com/iakadirov/vibecodinguz",
+  "license": "MIT",
+  "keywords": [
+    "uzbek",
+    "ozbek",
+    "prd",
+    "product",
+    "startup",
+    "vibecoding",
+    "planning"
+  ]
+}
