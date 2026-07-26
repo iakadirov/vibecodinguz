@@ -14,7 +14,12 @@ Til: **faqat lotin o'zbek**. Kirill belgi ishlatma.
 
 ## Qoidalar (avval o'qi)
 
-- Yozuvlar **QISQA**: hisobot 1-2 qator, handoff 1-3 qator. Roman yozma.
+- Yozuvlar **QISQA**. Bu qat'iy chegara, tavsiya emas:
+  - **Hisobot: eng ko'pi 2 qator.** Bitta `- sana: ...` yozuvi.
+  - **Handoff: eng ko'pi 3 qator.**
+  - Sarlavha, qalin sarlavhachalar, ichki ro'yxatlar, "Bajarilgani / Boshlangan /
+    Hali boshlanmagani" kabi bo'limlar QO'SHILMAYDI. Uzun yozsang — xato qilding.
+  - Batafsil tushuntirishni asosiy sessiyaga og'zaki qaytar, faylga yozma.
 - Mavjud matnni **o'chirma**. Faqat qo'sh yoki belgila.
 - Ishonching komil bo'lmagan narsani yozma. "Ehtimol", "balki" — yozilmaydi.
 - Sprint fayli topilmasa — **jimgina** hech narsa qilma va faqat commitni davom ettir.
@@ -46,17 +51,22 @@ o'zgartirma, faqat 5-qadamga (commit) o't.
    tasklarni `- [ ]` dan `- [x]` ga o'tkaz. **Faqat isbot bor tasklarni belgila** —
    shubha bo'lsa belgilama.
 
-2. **Hisobot bo'limiga qo'sh.** Mavjud yozuvlarni saqlab, oxiriga qo'sh:
+2. **Hisobot bo'limiga qo'sh.** Mavjud yozuvlarni saqlab, oxiriga BITTA yozuv qo'sh:
    ```
    - {{sana}}: {{nima qilindi}} ({{asosiy fayllar}})
    ```
-   1-2 qator. Namuna:
+   Eng ko'pi 2 qator. Namuna:
    `- 2026-07-26: mashinalar ro'yxati sahifasi va sana tanlash qo'shildi (app/mashinalar/page.tsx, app/api/bronlar/route.ts)`
 
+   Ish tugallanmagan bo'lsa ham shu bitta yozuv yetarli:
+   `- 2026-07-26: S1 boshlandi — seed va bosh sahifa qoralamasi (lib/seed.ts, app/page.tsx)`
+
 3. **Handoff bo'limini yangila.** Bu bo'lim **almashtiriladi** (eskisi keraksiz):
-   keyingi sessiya nimadan boshlashi, 1-3 qator. Namuna:
+   keyingi sessiya nimadan boshlashi. **Eng ko'pi 3 qator, raqamlangan ro'yxatsiz.**
+   Namuna:
    ```
-   Keyingi: bron tasdiqlash oqimi. Ochiq: to'qnashuv holati hali yozilmagan.
+   Keyingi: Next.js skeleti (package.json, tsconfig, Tailwind) — hozir npm run dev ishlamaydi.
+   Keyin: /mashinalar/[id] yo'nalishi va sana formasi.
    ```
 
 Sanani `git log -1 --format=%cd --date=short` yoki tizim sanasidan ol.

@@ -26,11 +26,14 @@ Claude Code ichida quyidagi ikki buyruqni yozing:
 Tekshirish: `/plugin` deb yozing — ro'yxatda `vibecoding` ko'rinadi.
 Yoki `/` bosing — `charxla`, `qovurdoq`, `prdla` ro'yxatda chiqadi.
 
-**Yangilash:**
+**Yangilash** (ikkalasi ham kerak — avval katalog, keyin plugin):
 
 ```
 /plugin marketplace update vibecoding-uz
+/plugin update vibecoding@vibecoding-uz
 ```
+
+Keyin Claude Code'ni qayta ishga tushiring.
 
 ---
 
@@ -135,7 +138,7 @@ skill sizni to'g'ri joyga yo'naltiradi (masalan `prdla` avval `qovurdoq`ni so'ra
 | Skill ro'yxatda yo'q | Claude Code'ni qayta ishga tushiring yoki `/reload-plugins` |
 | `/plugin install` topmayapti | Avval `/plugin marketplace add iakadirov/vibecodinguz` |
 | Commit to'xtab qolyapti | Hisobotchi agentni ishga tushiring, yoki `.vibecoding/hisobot-ok` faylini qo'lda yarating |
-| Yangi versiya kelmayapti | `/plugin marketplace update vibecoding-uz` |
+| Yangi versiya kelmayapti | `/plugin marketplace update vibecoding-uz`, keyin `/plugin update vibecoding@vibecoding-uz` |
 
 ---
 
