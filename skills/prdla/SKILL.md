@@ -191,18 +191,23 @@ Tartib **o'zgarmaydi**, sprint qo'shilmaydi. Maqsad va savol barcha loyihalarda 
 
 ### SPRINT-1-kesim.md
 **Savol:** Ishlaydimi?
-**Maqsad:** Yurak amalni boshidan oxirigacha bitta vertikal kesimda ishlatib ko'rish.
-Task yo'nalishlari: loyiha skeleti (Next.js + TypeScript + Tailwind) va ishlaydigan sahifa ·
-yurak amal yo'lidagi 2-3 ekran, ma'lumot vaqtincha kodda (seed) bo'lsa ham bo'ladi ·
-yurak amalni bajaradigan bitta API yo'li · natija brauzerda ko'rinadi.
-Bu sprintda YO'Q: ro'yxatdan o'tish, baza, rollar, dizayn nafisligi.
+**Maqsad:** Yurak amalni boshidan oxirigacha bitta vertikal kesimda ishlatib ko'rish —
+ekran → mantiq → saqlash → jonli.
+Task yo'nalishlari (3 ta): katalog — asosiy jadval (minimal maydonlar) + 4 ta seed yozuv +
+ro'yxat sahifasi · detal sahifasi va tanlov (sana/variant), tekshiruvsiz ·
+yurak amal formasi va uni bazaga yozadigan bitta API yo'li + tasdiq ekrani.
+Ma'lumot lokal PostgreSQL'da (Prisma) saqlanadi — model MINIMAL, faqat kesim uchun
+yetganicha. Sprint yakuni: mahsulot o'z domenida jonli.
+Bu sprintda YO'Q: ro'yxatdan o'tish va rollar · to'qnashuv/band-tekshiruv · fayl va
+rasm yuklash · to'liq ma'lumot modeli · dizayn nafisligi.
 
 ### SPRINT-2-xotira.md
 **Savol:** Eslab qoladimi?
-**Maqsad:** Ma'lumot serverni qayta ishga tushirgandan keyin ham saqlanib qolsin.
-Task yo'nalishlari: PostgreSQL ulanishi va Prisma sxemasi (PRD'dagi jadval nomlari
-bo'yicha) · S1'dagi seed ma'lumotni bazaga ko'chirish · yaratish va o'qish amallari
-baza orqali · rasm/fayl yuklash (loyihada kerak bo'lsa).
+**Maqsad:** Model to'lsin va mahsulot xotirasi jiddiy ma'lumotni ko'tarsin.
+Task yo'nalishlari: PRD'dagi to'liq ma'lumot modeli — migratsiya bilan kengaytirish
+(S1'dagi mavjud yozuvlar omon qolsin) · bog'lanishlar (jadvallar orasidagi ip) ·
+rasm/fayl yuklash va ombor (loyihada kerak bo'lsa) · ro'yxatni jonlashtirish
+(filtr, saralash, asosiy foto).
 
 ### SPRINT-3-auth.md
 **Savol:** Kim kirdi?
