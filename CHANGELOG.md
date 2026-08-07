@@ -9,6 +9,19 @@ Darhol kerak bo'lsa: `/plugin marketplace update vibecoding-uz` va
 
 ---
 
+## 1.1.2
+
+- `prdla`: `SPRINT-1-kesim.md` va `SPRINT-2-xotira.md` matni kursning 8- va
+  9-darsiga moslandi. Sabab: S1 "Bu sprintda YO'Q: ... baza" deb yozardi va
+  bazani S2 ga qo'yardi — 8-dars esa Sprint 1'da lokal Postgres ko'taradi,
+  katalog jadvali + seed yaratadi va bronni bazaga yozadi. O'quvchi
+  "SPRINT-1 faylini o'qi" deganda Claude darsga zid rejani o'qirdi.
+  - S1: uch task aniq yozildi (katalog+seed · detal+tanlov · yurak amal bazaga),
+    minimal model bilan baza kiritildi; "YO'Q" ro'yxatida band-tekshiruv, auth,
+    fayl yuklash va to'liq model qoldi
+  - S2: to'liq model + migratsiya (eski yozuvlar omon qoladi), bog'lanishlar,
+    fayl ombori, ro'yxatni jonlashtirish
+
 ## 1.1.1
 
 - `savala`: natijani saqlash **majburiy** qilindi va tavsiyalardan oldinga ko'chirildi.
